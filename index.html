@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>cssObject</title>
+    <meta name="keywords" content="HTML,CSS,Object,cssObject">
+    <meta name="description" content="cssObject HTML Template">
+    <meta name="author" content="AmirRezaDalir">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"/>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <!-- Script -->
+    <script src="static/zepto.js" type="application/javascript"></script>
+    <script>
+        $(document).ready(function () {
+            $('#header .header-close,#header .header-open').click(function () {
+                $('#header').toggleClass('status-open');
+            });
+            $.each($('.section-content .item-box'), function (i, v) {
+                var img = $(v).find('.img img');
+                $('<img>').attr('src', img.attr('src')).on('load', function () {
+                    setTimeout(function () {
+                        img.addClass('scale-transition-in' + (i % 2 == 0 ? '-' : ''));
+                    }, i * 200)
+                });
+            })
+        });
+    </script>
+</head>
+<body>
+<div class="wrapper">
+    <header id="header" class="transition-500">
+        <div class="header-open transition-100">
+            <span class="i-shape-bottom">
+                <span class="i-menu"></span>
+            </span>
+        </div>
+        <div class="header-close transition-100">
+            <span class="i-shape-top">
+                <span class="i-close"></span>
+            </span>
+        </div>
+        <ul class="menu transition-100">
+            <li class="active">
+                <a href="#">صفحه اصلی , Home</a>
+            </li>
+            <li>
+                <a href="#">چرا؟ , ?Why</a>
+            </li>
+            <li>
+                <a href="#">چالش , The Challenge</a>
+            </li>
+            <li>
+                <a href="#">توسعه دهندگان , Developers</a>
+            </li>
+            <li>
+                <a href="#">طراحان , Designers</a>
+            </li>
+        </ul>
+    </header>
+    <div class="section-content">
+        <div class="item-box">
+            <a href="#" class="img">
+                <img src="https://cdn.dribbble.com/users/883236/screenshots/3430390/profile_card_ui_design-.png">
+            </a>
+            <div class="text">
+                <a href="#" class="name">The Moon Light</a>
+                <div class="right-box">
+                    <span class="icon i-brush">
+                        <span class="i-keyboard_arrow_right"></span>
+                    </span>
+                    <a href="#" class="design">
+                        <div class="avatar">
+                            <img src="http://gravatar.com/avatar/84c15b7c34694368c2b7f2d8122cc39a?s=64&amp;r=g" alt="Avatar" height="25" width="25">
+                        </div>
+                        <span>RTjo</span>
+                    </a>
+                </div>
+                <div class="left-box">
+                    <span class="icon i-code">
+                        <span class="i-keyboard_arrow_left"></span>
+                    </span>
+                    <a href="#" class="develop">
+                        <div class="avatar">
+                            <img src="http://gravatar.com/avatar/84c15b7c34694368c2b7f2d8122cc39a?s=64&amp;r=g" alt="Avatar" height="25" width="25">
+                        </div>
+                        <span>Amir</span>
+                    </a>
+                </div>
+                <div class="tag">
+                    <span>#Car</span>
+                    <span>#Red</span>
+                    <span>#Buzz</span>
+                </div>
+                <div class="date">MAY 28</div>
+            </div>
+        </div>
+        <div class="item-box">
+            <a href="#" class="img">
+                <img src="https://cdn.dribbble.com/users/883236/screenshots/3430390/profile_card_ui_design-.png">
+            </a>
+            <div class="text">
+                <p class="name">The Moon Light</p>
+                <div class="right-box">
+                    <span class="icon i-brush">
+                        <span class="i-keyboard_arrow_right"></span>
+                    </span>
+                    <a href="#" class="design">
+                        <div class="avatar">
+                            <img src="http://gravatar.com/avatar/84c15b7c34694368c2b7f2d8122cc39a?s=64&amp;r=g" alt="Avatar" height="25" width="25">
+                        </div>
+                        <span>RTjo</span>
+                    </a>
+                </div>
+                <div class="left-box">
+                    <span class="icon i-code">
+                        <span class="i-keyboard_arrow_left"></span>
+                    </span>
+                    <a href="#" class="develop">
+                        <div class="avatar">
+                            <img src="http://gravatar.com/avatar/84c15b7c34694368c2b7f2d8122cc39a?s=64&amp;r=g" alt="Avatar" height="25" width="25">
+                        </div>
+                        <span>Amir</span>
+                    </a>
+                </div>
+                <div class="tag">
+                    <span>#Car</span>
+                    <span>#Red</span>
+                    <span>#Buzz</span>
+                </div>
+                <div class="date">MAY 28</div>
+            </div>
+        </div>
+        <div class="item-box">
+            <a href="#" class="img">
+                <img src="https://cdn.dribbble.com/users/883236/screenshots/3430390/profile_card_ui_design-.png">
+            </a>
+            <div class="text">
+                <p class="name">The Moon Light</p>
+                <div class="right-box">
+                    <span class="icon i-brush">
+                        <span class="i-keyboard_arrow_right"></span>
+                    </span>
+                    <a href="#" class="design">
+                        <div class="avatar">
+                            <img src="http://gravatar.com/avatar/84c15b7c34694368c2b7f2d8122cc39a?s=64&amp;r=g" alt="Avatar" height="25" width="25">
+                        </div>
+                        <span>RTjo</span>
+                    </a>
+                </div>
+                <div class="left-box">
+                    <span class="icon i-code">
+                        <span class="i-keyboard_arrow_left"></span>
+                    </span>
+                    <a href="#" class="develop">
+                        <div class="avatar">
+                            <img src="http://gravatar.com/avatar/84c15b7c34694368c2b7f2d8122cc39a?s=64&amp;r=g" alt="Avatar" height="25" width="25">
+                        </div>
+                        <span>Amir</span>
+                    </a>
+                </div>
+                <div class="tag">
+                    <span>#Car</span>
+                    <span>#Red</span>
+                    <span>#Buzz</span>
+                </div>
+                <div class="date">MAY 28</div>
+            </div>
+        </div>
+        <div class="item-box">
+            <a href="#" class="img">
+                <img src="https://cdn.dribbble.com/users/883236/screenshots/3430390/profile_card_ui_design-.png">
+            </a>
+            <div class="text">
+                <p class="name">The Moon Light</p>
+                <div class="right-box">
+                    <span class="icon i-brush">
+                        <span class="i-keyboard_arrow_right"></span>
+                    </span>
+                    <a href="#" class="design">
+                        <div class="avatar">
+                            <img src="http://gravatar.com/avatar/84c15b7c34694368c2b7f2d8122cc39a?s=64&amp;r=g" alt="Avatar" height="25" width="25">
+                        </div>
+                        <span>RTjo</span>
+                    </a>
+                </div>
+                <div class="left-box">
+                    <span class="icon i-code">
+                        <span class="i-keyboard_arrow_left"></span>
+                    </span>
+                    <a href="#" class="develop">
+                        <div class="avatar">
+                            <img src="http://gravatar.com/avatar/84c15b7c34694368c2b7f2d8122cc39a?s=64&amp;r=g" alt="Avatar" height="25" width="25">
+                        </div>
+                        <span>Amir</span>
+                    </a>
+                </div>
+                <div class="tag">
+                    <span>#Car</span>
+                    <span>#Red</span>
+                    <span>#Buzz</span>
+                </div>
+                <div class="date">MAY 28</div>
+            </div>
+        </div>
+        <div class="item-box">
+            <a href="#" class="img">
+                <img src="https://cdn.dribbble.com/users/883236/screenshots/3430390/profile_card_ui_design-.png">
+            </a>
+            <div class="text">
+                <p class="name">The Moon Light</p>
+                <div class="right-box">
+                    <span class="icon i-brush">
+                        <span class="i-keyboard_arrow_right"></span>
+                    </span>
+                    <a href="#" class="design">
+                        <div class="avatar">
+                            <img src="http://gravatar.com/avatar/84c15b7c34694368c2b7f2d8122cc39a?s=64&amp;r=g" alt="Avatar" height="25" width="25">
+                        </div>
+                        <span>RTjo</span>
+                    </a>
+                </div>
+                <div class="left-box">
+                    <span class="icon i-code">
+                        <span class="i-keyboard_arrow_left"></span>
+                    </span>
+                    <a href="#" class="develop">
+                        <div class="avatar">
+                            <img src="http://gravatar.com/avatar/84c15b7c34694368c2b7f2d8122cc39a?s=64&amp;r=g" alt="Avatar" height="25" width="25">
+                        </div>
+                        <span>Amir</span>
+                    </a>
+                </div>
+                <div class="tag">
+                    <span>#Car</span>
+                    <span>#Red</span>
+                    <span>#Buzz</span>
+                </div>
+                <div class="date">MAY 28</div>
+            </div>
+        </div>
+        <div class="item-box">
+            <a href="#" class="img">
+                <img src="https://cdn.dribbble.com/users/883236/screenshots/3430390/profile_card_ui_design-.png">
+            </a>
+            <div class="text">
+                <p class="name">The Moon Light</p>
+                <div class="right-box">
+                    <span class="icon i-brush">
+                        <span class="i-keyboard_arrow_right"></span>
+                    </span>
+                    <a href="#" class="design">
+                        <div class="avatar">
+                            <img src="http://gravatar.com/avatar/84c15b7c34694368c2b7f2d8122cc39a?s=64&amp;r=g" alt="Avatar" height="25" width="25">
+                        </div>
+                        <span>RTjo</span>
+                    </a>
+                </div>
+                <div class="left-box">
+                    <span class="icon i-code">
+                        <span class="i-keyboard_arrow_left"></span>
+                    </span>
+                    <a href="#" class="develop">
+                        <div class="avatar">
+                            <img src="http://gravatar.com/avatar/84c15b7c34694368c2b7f2d8122cc39a?s=64&amp;r=g" alt="Avatar" height="25" width="25">
+                        </div>
+                        <span>Amir</span>
+                    </a>
+                </div>
+                <div class="tag">
+                    <span>#Car</span>
+                    <span>#Red</span>
+                    <span>#Buzz</span>
+                </div>
+                <div class="date">MAY 28</div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer" class="border-top">
+        <div class="footer-top">
+            <span class="i-shape-top">
+                <span class="i-keyboard_arrow_up"></span>
+            </span>
+        </div>
+        <p style="font-size: 12px;">Copyright © 2015. cssObject. Develop by dalirnet@gmail.com</p>
+        <p class="item">
+            <a href="#" class="i-html"></a>
+            <a href="#" class="i-instagram"></a>
+            <a href="#" class="i-css"></a>
+        </p>
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,186 @@
+@font-face {
+    font-family: 'cssObject';
+    src: url('fonts/cssObject.eot?xxjxn3');
+    src: url('fonts/cssObject.eot?xxjxn3#iefix') format('embedded-opentype'),
+    url('fonts/cssObject.ttf?xxjxn3') format('truetype'),
+    url('fonts/cssObject.woff?xxjxn3') format('woff'),
+    url('fonts/cssObject.svg?xxjxn3#cssObject') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="i-"], [class*=" i-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'cssObject' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.i-shape-left:before {
+    content: "\2b9c";
+}
+
+.i-shape-top:before {
+    content: "\2b9d";
+}
+
+.i-shape-bottom:before {
+    content: "\2b9f";
+}
+
+.i-shape-right:before {
+    content: "\2b9e";
+}
+
+.i-drink:before {
+    content: "\2615";
+}
+
+.i-upload:before {
+    content: "\26fa";
+}
+
+.i-brush:before {
+    content: "\270f";
+}
+
+.i-pen:before {
+    content: "\2710";
+}
+
+.i-tags:before {
+    content: "\275b";
+}
+
+.i-time:before {
+    content: "\2686";
+}
+
+.i-arrow_back:before {
+    content: "\2b60";
+}
+
+.i-arrow_downward:before {
+    content: "\2b07";
+}
+
+.i-arrow_drop_down:before {
+    content: "\2b63";
+}
+
+.i-arrow_drop_up:before {
+    content: "\2b06";
+}
+
+.i-arrow_forward:before {
+    content: "\2b62";
+}
+
+.i-arrow_upward:before {
+    content: "\2b61";
+}
+
+.i-close:before {
+    content: "\2715";
+}
+
+.i-compare_arrows:before {
+    content: "\268d";
+}
+
+.i-keyboard_arrow_down:before {
+    content: "\23f7";
+}
+
+.i-keyboard_arrow_left:before {
+    content: "\23f4";
+}
+
+.i-keyboard_arrow_right:before {
+    content: "\23f5";
+}
+
+.i-keyboard_arrow_up:before {
+    content: "\23f6";
+}
+
+.i-label:before {
+    content: "\2617";
+}
+
+.i-menu:before {
+    content: "\2630";
+}
+
+.i-person:before {
+    content: "\263b";
+}
+
+.i-search:before {
+    content: "\26b2";
+}
+
+.i-settings:before {
+    content: "\2637";
+}
+
+.i-share:before {
+    content: "\26ec";
+}
+
+.i-star:before {
+    content: "\2605";
+}
+
+.i-lock:before {
+    content: "\26a0";
+}
+
+.i-pin:before {
+    content: "\26ff";
+}
+
+.i-barcode:before {
+    content: "\2652";
+}
+
+.i-code:before {
+    content: "\26f6";
+}
+
+.i-grid:before {
+    content: "\268f";
+}
+
+.i-key:before {
+    content: "\2757";
+}
+
+.i-mail:before {
+    content: "\260e";
+}
+
+.i-plus:before {
+    content: "\271a";
+}
+
+.i-instagram:before {
+    content: "\273f";
+}
+
+.i-html:before {
+    content: "\25a7";
+}
+
+.i-css:before {
+    content: "\25a9";
+}
+
